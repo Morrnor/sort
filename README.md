@@ -6,5 +6,5 @@ $ sed -i '' '1s/^/algorithm n comparisons\n/' values.dat
 $ R
 t <- read.table('values.dat', header=TRUE)
 library(ggplot2)
-ggplot(t, aes(n, time, colour = algorithm)) + geom_point() + geom_smooth()
+ggplot(t, aes(n, comparisons, colour = algorithm)) + geom_point() + geom_smooth()
 ```
