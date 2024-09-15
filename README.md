@@ -7,6 +7,6 @@ $ R
 t <- read.table('values.dat', header=TRUE)
 library(ggplot2)
 
-# to plot # comparisons
+# to plot comparisons
 ggplot(t, aes(n, comparisons, colour = algorithm)) + geom_point() + geom_smooth()
 ```
